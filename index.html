@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tolem card</title>
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
+  <script src="/js/swiper.js" defer></script>
+  <script src="/js/accordion.js" defer></script>
+  <script src="/js/index.js" defer></script>
+
+  <script src="/components/header.js"></script>
+  <script src="/components/footer.js"></script>
+  <script src="/components/news.js"></script>
+  <script src="/components/faq.js"></script>
+</head>
+
+<body>
+  <header-component></header-component>
+  <main>
+    <section id="hero" class="bg-image-container mb-16">
+      <img class="bg-image" src="/assets/images/hero-bg.jpg" alt="bg-image">
+      <div class="container flex justify-center relative h-full">
+        <h2>TOLEM <br> Электрондық төлем жүйесі</h2>
+        <img src="/assets/images/hero-phones.png" alt="phones" class="left-image">
+        <img src="/assets/images/hero-cards.png" alt="phones" class="right-image">
+      </div>
+    </section>
+    <section id="services" class="container text-center mb-18">
+      <h1 class="mb-8">БІЗ НЕ ҰСЫНАМЫЗ?</h2>
+        <div class="flex flex-wrap gap-4 justify-between mx-auto justify-center-1340">
+          <div class="max-280">
+            <img class="mb-2" src="/assets/icons/lock.svg" alt="lock">
+            <div class="text-md mb-2">Қауіпсіздік</div>
+            <div class="text-sm">Заманына сай жаңа карталар сізге
+              комфорт сыйлары сөзсіз</div>
+          </div>
+          <div class="max-280">
+            <img class="mb-2" src="/assets/icons/terminal.svg" alt="terminal">
+            <div class="text-md mb-2">Ыңғайлылық</div>
+            <div class="text-sm">Заманына сай жаңа карталар сізге
+              комфорт сыйлары сөзсіз</div>
+          </div>
+          <div class="max-280">
+            <img class="mb-2" src="/assets/icons/globe.svg" alt="globe">
+            <div class="text-md mb-2">Сапалы сервис</div>
+            <div class="text-sm">Біз әрқашанда өз
+              тұтынушыларымызды сапалы
+              қызметпен қамтимыз!</div>
+          </div>
+          <div class="max-280">
+            <img class="mb-2" src="/assets/icons/git.svg" alt="git">
+            <div class="text-md mb-2">Заманауи технология</div>
+            <div class="text-sm">Цифрлық Қазақстан мемелекеттік
+              бағдарламаның жарқын көрінісі.</div>
+          </div>
+        </div>
+    </section>
+    <section id="cards" class="container mb-18 gap-6 flex flex-wrap justify-between">
+      <div class="flex-1">
+        <h1 class="mb-4">TOLEM карталары</h1>
+        <p class="max-280 mb-6">
+          Өз картаңды таңда. Өз картаңды
+          таңда да, жол ақысын ғана
+          төлеп қоймай, жеңілдікті пайдалана
+          отырып басқа да қызметтерге
+          төлем жаса!
+        </p>
+        <a href="/pages/cards.html">
+          <button class="primary fw-700">Толығырақ</button>
+        </a>
+      </div>
+      <div class="flex cards-wrapper flex-1 justify-between gap-4 text-center">
+        <div>
+          <p>Standart картасы</p>
+          <img style="min-width: 9rem;" src="/assets/images/standard.jpg" alt="standard card">
+        </div>
+        <div>
+          <p>Студент картасы</p>
+          <img style="min-width: 9rem;" src="/assets/images/student.jpg" alt="student card">
+        </div>
+        <div>
+          <p>Оқушы картасы</p>
+          <img style="min-width: 9rem;" src="/assets/images/puple.jpg" alt="puple card">
+        </div>
+      </div>
+    </section>
+    <section id="app">
+      <div class="container flex flex-wrap gap-16">
+        <p class="text-md fw-600 text-primary md-block">TOLEM</p>
+        <img src="/assets//images/app-phone.png" alt="app phone">
+        <div class="ml-auto mb-4">
+          <h1 class="mb-5">Мобильді қосымша</h1>
+          <div class="flex flex-wrap items-center gap-16">
+            <div>
+              <button class="outline p-1 mb-4" style="min-width: 11.875rem;">
+                <img src="/assets/icons/apple.svg" alt="appstore">
+                <div>
+                  <p class="text-base">TOLEM</p>
+                  <div class="text-base fw-700">App Store</div>
+                </div>
+              </button>
+              <button class="outline p-1" style="min-width: 11.875rem;">
+                <img src="/assets/icons/google-play.svg" alt="google play">
+                <div>
+                  <p class="text-base">TOLEM</p>
+                  <div class="text-base fw-700">Google Play</div>
+                </div>
+              </button>
+            </div>
+            <ul>
+              <li class="mb-4">Өз шығындарыңды басқарып отыр</li>
+              <li class="mb-4">Онлайн түрде картаны толықтыр</li>
+              <li class="mb-4">Картаны жоғалтқан жағдайда бұғатта</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="mektep" class="mb-18">
+      <div class="container bg-image-container">
+        <img class="mb-6" src="/assets/images/logo.jpg" alt="tolem mektep">
+        <div class="text-md mb-8" style="max-width: 33rem;">
+          МЕКТЕПТЕГІ ТАМАҚТАНДЫРУДЫ ҰЙЫМДАСТЫРУ ПРОЦЕСІН <strong>ТОЛЫҚ ЦИФРЛАНДЫРУ</strong>
+        </div>
+        <div class="flex flex-wrap gap-4 mb-8">
+          <div class="switch">МЕКТЕП ТУРНИКЕТІНЕН ӨТКЕНДЕ</div>
+          <div class="switch">ҚОҒАМДЫҚ КӨЛІКТЕ ЖОЛАҚЫСЫН ТӨЛЕГЕНДЕ</div>
+          <div class="switch">МЕКТЕП АСХАНАСЫНДА ТАМАҚТАНУҒА ТӨЛЕГЕНДЕ</div>
+        </div>
+        <button class="primary fw-700">Толығырақ</button>
+        <div class="fade-bg-image md-block">
+          <img src="/assets/images/tolem-mektep-bg.jpg" alt="tolem mektep">
+        </div>
+      </div>
+    </section>
+    <section id="news" class="container mb-18">
+      <h1 class="mb-4">Соңғы жаңалықтар</h1>
+      <news-component></news-component>
+    </section>
+    <section id="faq" class="container mb-18">
+      <h1 class="mb-4">Жиі қойылатын сұрақтар</h1>
+      <a href="#" class="button outline mb-3">
+        Мобильді қосымша
+      </a>
+      <faq-component></faq-component>
+    </section>
+    <section id="partners" class="mb-8">
+      <div class="container">
+        <div class="separator w-90 mb-6"></div>
+        <div class="text-md text-primary mb-2">TOLEM</div>
+        <h1 class="mb-6">Серіктестер</h1>
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="/assets/images/partners/partner1.png" alt="partner1 logo">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/partners/partner2.png" alt="partner1 logo">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/partners/partner3.png" alt="partner1 logo">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/partners/partner4.png" alt="partner1 logo">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/partners/partner5.png" alt="partner1 logo">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/partners/partner6.png" alt="partner1 logo">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/partners/partner7.png" alt="partner1 logo">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/partners/partner8.png" alt="partner1 logo">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/partners/partner9.png" alt="partner1 logo">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/partners/partner10.png" alt="partner1 logo">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/partners/partner11.png" alt="partner1 logo">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/partners/partner1.png" alt="partner1 logo">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/partners/partner2.png" alt="partner1 logo">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/partners/partner3.png" alt="partner1 logo">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/partners/partner4.png" alt="partner1 logo">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/partners/partner5.png" alt="partner1 logo">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/partners/partner6.png" alt="partner1 logo">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/partners/partner7.png" alt="partner1 logo">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/partners/partner8.png" alt="partner1 logo">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/partners/partner9.png" alt="partner1 logo">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/partners/partner10.png" alt="partner1 logo">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/partners/partner11.png" alt="partner1 logo">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/partners/partner1.png" alt="partner1 logo">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/partners/partner2.png" alt="partner1 logo">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/partners/partner3.png" alt="partner1 logo">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/partners/partner4.png" alt="partner1 logo">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/partners/partner5.png" alt="partner1 logo">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/partners/partner6.png" alt="partner1 logo">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/partners/partner7.png" alt="partner1 logo">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/partners/partner8.png" alt="partner1 logo">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/partners/partner9.png" alt="partner1 logo">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/partners/partner10.png" alt="partner1 logo">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/partners/partner11.png" alt="partner1 logo">
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer-component></footer-component>
+</body>
+
+</html>

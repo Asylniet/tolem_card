@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cards</title>
+  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="/js/tabs.js" defer></script>
+  <script src="/js/index.js" defer></script>
+  
+
+  <script src="/components/header.js"></script>
+  <script src="/components/footer.js"></script>
+</head>
+<body>
+  <header-component></header-component>
+  <main class="mb-8">
+    <section id="cards" class="container mb-18 gap-6 flex flex-wrap justify-between">
+      <div class="box text-base text-center flex items-center">
+        Өз картаңды таңда. 
+        Өз картаңды таңда да, 
+        жол ақысын ғана 
+        төлеп қоймай, жеңілдікті 
+        пайдалана отырып басқа 
+        да қызметтерге 
+        төлем жаса!
+      </div>
+      <div class="flex cards-wrapper flex-1 justify-center gap-4 text-center">
+        <div>
+          <p>Standart картасы</p>
+          <img style="min-width: 9rem;" src="/assets/images/standard.jpg" alt="standard card">
+        </div>
+        <div>
+          <p>Студент картасы</p>
+          <img style="min-width: 9rem;" src="/assets/images/student.jpg" alt="student card">
+        </div>
+        <div>
+          <p>Оқушы картасы</p>
+          <img style="min-width: 9rem;" src="/assets/images/puple.jpg" alt="puple card">
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="fw-600 text-center mb-6" style="font-size: 2.5rem;">TOLEM карталары</div>
+      <div id="cards-description">
+        <div class="container flex gap-16 flex-wrap">
+          <div class="student-card">
+            <div class="mb-6"><div class="fw-600">750 тг</div> карта куны</div>
+            <div class="fw-600 text-center mb-2">жол акысы</div>
+            <div>
+              <strong>35тг</strong> - окушы <br>
+              <strong>50тг</strong> - студент <br>
+              <strong>70тг</strong> - стандарт <br>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <div class="flex tabs gap-16">
+              <div class="tab active" data-tab="1">Сатып алу</div>
+              <div class="tab" data-tab="2">Кайта шыгару</div>
+              <div class="tab" data-tab="3">Онлайн тапсырыс</div>
+            </div>
+            <div class="tab-contents relative text-base">
+              <div class="tab-content active" data-content="1">
+                <ul>
+                  <li>Жангелдина, 1</li>
+                  <li>Зерде аптекаларынан, Грамадтан</li>
+                  <li>Толем фронт офисынан</li>
+                  <li>Баидибек Би, 116 мекен жайынан алаласыздар</li>
+                </ul>
+              </div>
+              <div class="tab-content" data-content="2">
+                Оқушы картасы жоғалса немесе істемей қалған жағдайда, оқушының ата-анасы Аль-Фараби даңгыды 9 мекен жайындағы Фронт офисқа келіп арыз жазуы керек. Біздің мамандар жоғалған картаны бұғаттап жаңа карта рәсімдейді. Жоғалған картадағы теңгерімді жаңа картаға ауыстырып береді.
+              </div>
+              <div class="tab-content" data-content="3">
+                <div class="mb-6">
+                  Төлем картасына онлайн тапсырыс беру үшін төменде көрсетілген нұсқалар арқылы беруге болады. 
+                </div>
+                1. Мобильді қосымшаға кіріп “Картаға тапсырыс” батырмасын басасыз <br>
+                2. Ашылған беттегі нұсқаулықтарды толтырасыз <br>
+                3. Карта құнын өтейсіз <br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer-component></footer-component>
+</body>
+</html>
