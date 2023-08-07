@@ -649,6 +649,7 @@ footer {
   max-width: 26.5rem;
   font-weight: 600;
   transition: 0.2s ease;
+  cursor: pointer;
 
   &:nth-child(even) {
     background-color: rgb(var(--clr-primary));
@@ -715,16 +716,22 @@ footer {
 
 .panel {
   box-sizing: border-box;
-  border-radius: 0.625rem;
-  background-color: rgb(var(--clr-primary), .2);
-  border: 1px solid rgb(var(--clr-primary));
   max-height: 0;
   opacity: 0;
   overflow: hidden;
   transition: 0.2s ease-out;
+  &.active {
+    opacity: 1;
+  }
+}
+
+.faq-panel {
+  font-size: 1.875rem;
   text-align: center;
   margin-top: 0.5rem;
-  font-size: 1.875rem;
+  border-radius: 0.625rem;
+  background-color: rgb(var(--clr-primary), .2);
+  border: 1px solid rgb(var(--clr-primary));
   &.active {
     margin-bottom: 1rem;
     opacity: 1;
@@ -772,7 +779,6 @@ footer {
 .news-text {
   max-width: 920px;
   font-size: 1.5625rem;
-  margin-bottom: 17.5rem;
 }
 
 .box {
