@@ -11,7 +11,7 @@ class Footer extends HTMLElement {
         <div class="flex flex-wrap gap-6 items-center justify-between">
           <p>
             Қызмет көрсету орталығы: <br>
-            Шымкент каласы, Конаева,59, БО Астана <br>
+            Шымкент каласы, Конаева, 20/1, БО Астана <br>
             жұмыс кестесі: дүйсенбі мен жұма аралығы 9.00 - 18.00
           </p>
           <div>
