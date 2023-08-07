@@ -9,7 +9,11 @@ class Header extends HTMLElement {
         <div class="container flex items-center justify-between">
           <nav>
             <ul class="gap-1 flex items-center hidden-dots bg">
-              <li><a class="text-md text-primary mr-2 logo" href="/">TOLEM</a></li>
+              <li>
+                <a class="text-md text-primary mr-2 logo" href="/">
+                  <img src="/assets/logo.svg" style="height: 3rem" />
+                </a>
+              </li>
               <li class="md-none">Электрондық жүйе</li>
               <div class="gap-1 flex items-center">
                 <li><a class="link md-block text-black fw-600 mr-5" href="/pages/cards.html">Карталар</a></li>
