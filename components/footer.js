@@ -3,16 +3,28 @@ class Footer extends HTMLElement {
       super();
   }
 
+  langMap = {
+    kz: {
+      address: `Қызмет көрсету орталығы: <br>
+      Шымкент каласы, Конаева, 20/1, БО Астана <br>
+      жұмыс кестесі: дүйсенбі мен жұма аралығы 9.00 - 18.00`,
+    },
+    ru: {
+      address: `Сервисный центр: <br>
+      Г. Шымкент, Конаева, 59, БЦ Астана <br>
+      график работы: с понедельника по пятницу с 9.00 до 18.00`,
+    },
+  }
+
   connectedCallback() {
+    const lang = document.querySelector('html').getAttribute("lang");
       this.innerHTML = `
       <footer class="container">
         <div class="separator w-90 mb-6"></div>
         <div class="text-md text-primary mb-2">TOLEM</div>
         <div class="flex flex-wrap gap-6 items-center justify-between">
           <p>
-            Қызмет көрсету орталығы: <br>
-            Шымкент каласы, Конаева, 20/1, БО Астана <br>
-            жұмыс кестесі: дүйсенбі мен жұма аралығы 9.00 - 18.00
+            ${this.langMap[lang].address}
           </p>
           <div>
             <a class="icon hover-fill" style="--clr: #E1306C" href="/">

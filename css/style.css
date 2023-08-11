@@ -234,6 +234,13 @@ h2, .h2 {
   min-width: fit-content;
 }
 
+html:lang(ru) .max-300 {
+  max-width: 19.6rem;
+}
+html:lang(ru) .max-300 .text-md {
+  font-size: 1.6rem;
+}
+
 .max-280 {
   max-width: 19.5rem;
 }
@@ -484,7 +491,7 @@ header[state=open] .floating {
 }
 
 main {
-  margin-top: 4.6875rem;
+  margin-top: 6rem;
 }
 
 footer {
