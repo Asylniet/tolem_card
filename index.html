@@ -32,11 +32,14 @@
   <header-component link="/ru/index.html"></header-component>
   <main>
     <section id="hero" class="bg-image-container mb-16">
-      <img class="bg-image" src="/assets/images/hero-bg.jpg" alt="bg-image">
-      <div class="container flex justify-center relative h-full">
-        <h2>TOLEM <br> Электрондық төлем жүйесі</h2>
+      <!-- <img class="bg-image start" src="/assets/images/hero-bg.jpg" alt="bg-image"> -->
+      <picture>
+        <source class="bg-image start" media="(max-width: 500px)" srcset="/assets/images/hero-bg-sm.jpg">
+        <img class="bg-image" src="/assets/images/hero-bg.jpg" alt="TOLEM Электрондық төлем жүйесі">
+      </picture>
+      <div class="container flex flex-wrap items-center gap-6 relative h-full">
         <img src="/assets/images/hero-phones.png" alt="phones" class="left-image">
-        <img src="/assets/images/hero-cards.png" alt="phones" class="right-image">
+        <h1>TOLEM <br> Электрондық <br> төлем жүйесі</h1>
       </div>
     </section>
     <section id="services" class="container text-center mb-18">
