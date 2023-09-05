@@ -54,8 +54,8 @@ class Header extends HTMLElement {
                 <li><a class="link text-black fw-600" href="${base}/index.html#news">${this.langMap[lang].news}</a></li>
                 <li><a class="link text-black fw-600" href="${base}/index.html#faq">${this.langMap[lang].faq}</a></li>
                 <li class="flex gap-4">
-                  <a class="underline link text-black fw-600" href=${lang === "ru" ? link : ""}>Қаз</a>
-                  <a class="link text-black fw-600" href=${lang === "kz" ? link : ""}>Рус</a>
+                  <a class="link ${lang === "kz" && 'underline'} text-black fw-600" href=${lang === "ru" ? link : ""}>Қаз</a>
+                  <a class="link ${lang === "ru" && 'underline'} text-black fw-600" href=${lang === "kz" ? link : ""}>Рус</a>
                 </li>
                 <div class="separator"></div>
                 <div class="flex justify-between items-center">

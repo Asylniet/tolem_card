@@ -386,8 +386,9 @@ ul.hidden-dots {
   &:hover {
     text-decoration: underline;
   }
-
+  
   &.underline {
+    text-decoration: underline;
     &:hover {
       filter: saturate(2);
     }
@@ -773,6 +774,19 @@ footer {
 .news-text {
   max-width: 920px;
   font-size: 1.5625rem;
+}
+
+.rules {
+  div, p {
+    margin: 0.5rem 0;
+    padding-left: 0.5rem;
+  }
+  h3 {
+    margin-top: 1.5rem;
+  }
+  p.mb-last-p {
+    margin-bottom: 2.125rem;
+  }
 }
 
 .box {

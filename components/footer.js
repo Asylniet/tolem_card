@@ -8,24 +8,32 @@ class Footer extends HTMLElement {
       address: `Қызмет көрсету орталығы: <br>
       Шымкент каласы, Конаева, 20/1, БО Астана <br>
       жұмыс кестесі: дүйсенбі мен жұма аралығы 9.00 - 18.00`,
+      offer: `Жария оферта`,
     },
     ru: {
       address: `Сервисный центр: <br>
       Г. Шымкент, Конаева, 59, БЦ Астана <br>
       график работы: с понедельника по пятницу с 9.00 до 18.00`,
+      offer: `Публичная оферта`,
     },
   }
 
   connectedCallback() {
     const lang = document.querySelector('html').getAttribute("lang");
+    const root = lang === 'kz' ? "/" : "/ru/"
       this.innerHTML = `
       <footer class="container">
         <div class="separator w-90 mb-6"></div>
         <div class="text-md text-primary mb-2">TOLEM</div>
         <div class="flex flex-wrap gap-6 items-center justify-between">
-          <p>
-            ${this.langMap[lang].address}
-          </p>
+          <div>
+            <p class="mb-4">
+              ${this.langMap[lang].address}
+            </p>
+            <a href="${root + 'politics.html'}" class="link underline text-black">
+              ${this.langMap[lang].offer}
+            </a>
+          </div>
           <div>
             <a class="icon hover-fill" style="--clr: #E1306C" href="/">
               <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
